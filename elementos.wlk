@@ -26,8 +26,6 @@ class Huerta{
     method efectoDelAtaque(unaPlaga){
         capacidadProduccion =  ( capacidadProduccion -  (  (unaPlaga.nivelDaño() * 0.10) + if(unaPlaga.transmiteEnfermedades()) 10 else 0 )  ).max(0)
     }
-
-    method efecto
 }
 
 class Mascota{
